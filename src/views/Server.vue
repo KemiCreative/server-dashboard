@@ -33,7 +33,7 @@ export default {
     return {
       results: [],
       sites: [],
-      server: this.$route.params.id
+      server: this.$route.params.sid
     };
   },
   methods: {},

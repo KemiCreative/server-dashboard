@@ -5,7 +5,7 @@ export const getSites = ip => {
     if (ip) {
       db.collection('installs')
 
-        .where('ip', '==', ip)
+        .where('sid', '==', ip)
         .get()
         .then(function(querySnapshot) {
           querySnapshot.forEach(function(doc) {

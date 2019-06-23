@@ -41,7 +41,7 @@ export default new Router({
         import(/* webpackChunkName: "servers" */ './views/AddInstall.vue')
     },
     {
-      path: '/server/:id',
+      path: '/server/:sid',
       name: 'server',
       props: true,
       // route level code-splitting
