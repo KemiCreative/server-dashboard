@@ -1,14 +1,28 @@
 <template>
   <div id="app">
+    <Nav></Nav>
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Home</router-link>|
+      <router-link to="/servers">Servers</router-link>|
+      <router-link to="/addinstall">Add Install</router-link>
     </div>
-    <router-view />
+    <router-view/>
   </div>
 </template>
 
+<script>
+import Nav from "@/components/Nav.vue";
+
+export default {
+  components: {
+    Nav
+  }
+};
+</script>
+
 <style lang="scss">
+@import "./styles/reset";
+@import "./styles/styles";
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
